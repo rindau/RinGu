@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RinGu", "RinGu.csproj", "{FAB3BDE4-3827-10A6-7CBD-6B19AD0E78FC}"
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{51FBC491-5814-2AAA-6729-E7937457C48C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FAB3BDE4-3827-10A6-7CBD-6B19AD0E78FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FAB3BDE4-3827-10A6-7CBD-6B19AD0E78FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FAB3BDE4-3827-10A6-7CBD-6B19AD0E78FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FAB3BDE4-3827-10A6-7CBD-6B19AD0E78FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51FBC491-5814-2AAA-6729-E7937457C48C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51FBC491-5814-2AAA-6729-E7937457C48C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51FBC491-5814-2AAA-6729-E7937457C48C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51FBC491-5814-2AAA-6729-E7937457C48C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
