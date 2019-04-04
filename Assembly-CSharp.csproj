@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Change_Direction.cs" />
     <Compile Include="Assets\coin_script.cs" />
     <Compile Include="Assets\Out_Of_Bounds.cs" />
     <Compile Include="Assets\score_script.cs" />

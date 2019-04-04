@@ -13,6 +13,8 @@ public class Movement : MonoBehaviour
     private Rigidbody2D characterBody;
     private float ScreenWidth;
 
+    public Animator animatorius;
+
     void Start()
     {
         ScreenWidth = Screen.width;
@@ -30,11 +32,13 @@ public class Movement : MonoBehaviour
             {
                 //move right
                 RunCharacter(1.0f);
+                animatorius.SetFloat("Kryptis", 1.0f);
             }
             if (Input.GetTouch(i).position.x < ScreenWidth / 2)
             {
                 //move left
                 RunCharacter(-1.0f);
+                animatorius.SetFloat("Kryptis", -1f);
             }
             ++i;
         }
