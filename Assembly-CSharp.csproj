@@ -64,6 +64,7 @@
     <Compile Include="Assets\coin_script.cs" />
     <Compile Include="Assets\Out_Of_Bounds.cs" />
     <Compile Include="Assets\score_script.cs" />
+    <Compile Include="Assets\Scripts\CoinMove.cs" />
     <Compile Include="Assets\Scripts\ColumnPool.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
     <Compile Include="Assets\Scripts\Repeating_Background.cs" />

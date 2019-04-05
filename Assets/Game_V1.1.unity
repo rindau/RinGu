@@ -823,7 +823,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -850,7 +850,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.0697613
+  orthographic size: 4.4471407
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -888,7 +888,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 670f6aca1272e6740bb4f13c0ef7c9c3, type: 3}
@@ -1615,6 +1615,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1288839114}
   - component: {fileID: 1288839113}
+  - component: {fileID: 1288839115}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -1654,6 +1655,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1288839115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1288839112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3ca808ebf0354849aeb585918b8aceb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  columnPrefab: {fileID: 2896618131607052967, guid: a58ff9cc9098a9246a15c7838cdb97da,
+    type: 3}
+  columnPoolSize: 10
+  spawnRate: 7
+  columnMin: -3
+  columnMax: 3.5
 --- !u!1 &1697879452
 GameObject:
   m_ObjectHideFlags: 0
