@@ -18,7 +18,6 @@ public class CoinMove : MonoBehaviour
 
     private float timeSinceLastSpawned;
 
-    private float elapsedTime = 0.0f;
     // Start is called before the first frame update
     void Start()
     {
