@@ -13,7 +13,7 @@ public class CoinMove : MonoBehaviour
     private GameObject[] columns;                                   //Collection of pooled columns.
     private int currentColumn = 0;                                  //Index of the current column in the collection.
 
-    private Vector2 objectPoolPosition = new Vector2(-15, -25);     //A holding position for our unused columns offscreen.
+    private Vector2 objectPoolPosition = new Vector3(-100, -250);     //A holding position for our unused columns offscreen.
     private float spawnYPosition = 10f;
 
     private float timeSinceLastSpawned;
@@ -35,12 +35,13 @@ public class CoinMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         timeSinceLastSpawned += Time.deltaTime;
 
         if (timeSinceLastSpawned >= spawnRate)
         {
             timeSinceLastSpawned = 0f;
-
+            columns[currentColumn].SetActive(true);
             float spawnXPosition = Random.Range(columnMin, columnMax);
 
             columns[currentColumn].transform.position = new Vector2(spawnXPosition, spawnYPosition);
@@ -50,6 +51,6 @@ public class CoinMove : MonoBehaviour
             {
                 currentColumn = 0;
             }
-        }
-    }
+        }              
+    }    
 }

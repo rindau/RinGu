@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class ColumnPool : MonoBehaviour
 {
-    public GameObject columnPrefab;                                 //The column game object.
+    public GameObject[] columnPrefab;                                 //The column game object.
     public int columnPoolSize = 5;                                  //How many columns to keep on standby.
     public float spawnRate = 3f;                                    //How quickly columns spawn.
     public float columnMin = -1f;                                   //Minimum x value of the column position.
     public float columnMax = 3.5f;                                  //Maximum x value of the column position.
 
+    private int RandomPrefab;
     private GameObject[] columns;                                   //Collection of pooled columns.
     private int currentColumn = 0;                                  //Index of the current column in the collection.
    
-    private Vector2 objectPoolPosition = new Vector2(-15, -25);     //A holding position for our unused columns offscreen.
-    private float spawnYPosition = -10f;
+    private Vector3 objectPoolPosition = new Vector3(-150, -65);     //A holding position for our unused columns offscreen.
+    private float spawnYPosition = -7f;
 
     private float timeSinceLastSpawned;
 
@@ -28,7 +29,8 @@ public class ColumnPool : MonoBehaviour
         for (int i = 0; i < columnPoolSize; i++)
         {
             //...and create the individual columns.
-            columns[i] = (GameObject)Instantiate(columnPrefab, objectPoolPosition, Quaternion.identity);
+            RandomPrefab = Random.Range(0, 5);
+            columns[i] = (GameObject)Instantiate(columnPrefab[RandomPrefab], objectPoolPosition, Quaternion.identity);
         }
     }
 
@@ -43,7 +45,7 @@ public class ColumnPool : MonoBehaviour
 
             float spawnXPosition = Random.Range(columnMin, columnMax);
 
-            columns[currentColumn].transform.position = new Vector2(spawnXPosition, spawnYPosition);
+            columns[currentColumn].transform.position = new Vector3(spawnXPosition, spawnYPosition, 2.5f);
 
             currentColumn++;
 
@@ -52,7 +54,5 @@ public class ColumnPool : MonoBehaviour
                 currentColumn = 0;
             }
         }
-
-
     }
 }
